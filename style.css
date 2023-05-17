@@ -87,7 +87,7 @@ main {
   justify-content: center;
   align-items: center;
   max-width: 80%;
-  padding: 20px 90px;
+  padding: 44px 90px;
   gap: 30px;
 }
 
@@ -249,7 +249,7 @@ main {
 }
 
 .contacto__titulo {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 30px;
 }
 
@@ -276,4 +276,19 @@ main {
   gap: 10px;
   text-decoration: none;
   color: var(--blancods);
+}
+
+#footersection {
+  background-color: var (--gris);
+  color: var(--negro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 5px;
+}
+
+#footersection h3 {
+  font-weight: 300;
+  font-size: 13px;
 }
