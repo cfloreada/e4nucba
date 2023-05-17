@@ -1,0 +1,279 @@
+:root {
+  --negro: #2b2b2b;
+  --azulds: #4468bb;
+  --celesteds: #38a3d2;
+  --blancods: #e2e4e8;
+  --white: white;
+  --gris: grey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--blancods);
+  width: 100%;
+}
+nav {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background: hsla(0, 0%, 100%, 0.25);
+  backdrop-filter: blur(4px);
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 16px 10px -18px #6a7da8;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.logo_navbar {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 60px 0 30px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  margin-right: 50px;
+}
+
+ul a {
+  color: var(--negro);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--azulds);
+  cursor: pointer;
+  padding: 0, 10px;
+  text-decoration: underline;
+}
+
+.navlink {
+  padding: 0 30px;
+}
+
+.navlink_contacto {
+  background-color: var(--white);
+  padding: 18px;
+  font-weight: bold;
+  border-radius: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#hero {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  padding: 20px 90px;
+  gap: 30px;
+}
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  max-width: 50%;
+  padding: 40px 20px;
+}
+
+.imgbanner {
+  width: 80%;
+  max-height: 400px;
+}
+
+.presentacion h1 {
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--negro);
+}
+
+.presentacion p {
+  font-size: 20px;
+  color: var(--gris);
+}
+
+.bannerbotones {
+  display: flex;
+  gap: 15px;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.bannerbotones a {
+  align-items: center;
+  color: var(--blancods);
+  background-color: var(--azulds);
+  border-radius: 40px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.imgbanner {
+  display: flex;
+  border-radius: 10px;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 0;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--celesteds);
+}
+
+#about p {
+  text-align: center;
+  line-height: 30px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: var(--white);
+}
+
+#beneficios {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 80%;
+  padding: 64px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#beneficios h2 {
+  font-weight: 600;
+  font-size: 38px;
+  color: transparent;
+  background: rgb(56, 163, 210);
+  background: radial-gradient(
+    circle,
+    rgba(56, 163, 210, 1) 0%,
+    rgba(69, 103, 180, 1) 42%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.beneficios_texto {
+  text-align: center;
+  line-height: 25px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.card_beneficio {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 430px;
+  border-radius: 30px;
+  background-color: var(--white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 48px 32px;
+  margin-top: 22px;
+}
+
+.card_beneficio h3 {
+  font-size: 28px;
+  color: var(--negro);
+}
+
+.beneficio_info {
+  font-size: 17px;
+  font-weight: 300;
+  color: var(--negro);
+  align-items: center;
+}
+
+.beneficio__icons {
+  height: 100px;
+  position: relative;
+  align-items: center;
+}
+
+#contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--negro);
+}
+
+.contacto__conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 15px;
+  color: var(--blancods);
+  padding: 20px;
+}
+
+.contacto__titulo {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.contacto__conteiner ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 15px;
+}
+
+.contacto__conteiner li {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.contacto__conteiner a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--blancods);
+}
