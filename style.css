@@ -15,6 +15,11 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
   background-color: var(--blancods);
   width: 100%;
@@ -45,32 +50,48 @@ ul {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  font-size: 16px;
   margin-right: 50px;
+  gap: 30px;
 }
 
-ul a {
+li a {
   color: var(--negro);
   text-decoration: none;
+  font-size: 16px;
 }
 
-a:hover {
+/* a:hover {
   color: var(--azulds);
   cursor: pointer;
   padding: 0, 10px;
   text-decoration: underline;
+} */
+
+.navlink li a::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--azulds);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s ease;
 }
 
-.navlink {
-  padding: 0 30px;
+.navlink li a:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
 }
 
-.navlink_contacto {
-  background-color: var(--white);
-  padding: 18px;
+.navlink li {
+  padding: 0;
+  position: relative;
+}
+
+.navlink :nth-child(4) {
   font-weight: bold;
-  border-radius: 16px;
 }
 
 main {
@@ -125,7 +146,7 @@ main {
 
 .bannerbotones a {
   align-items: center;
-  color: var(--blancods);
+  color: var(--white);
   background-color: var(--azulds);
   border-radius: 40px;
   padding: 10px 20px;
@@ -208,8 +229,13 @@ main {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  transition: gap 200ms;
   padding: 48px 32px;
   margin-top: 22px;
+}
+
+.card_beneficio:hover {
+  gap: 30px;
 }
 
 .card_beneficio h3 {
