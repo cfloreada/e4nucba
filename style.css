@@ -195,7 +195,6 @@ main {
   font-weight: 600;
   font-size: 38px;
   color: transparent;
-  background: rgb(56, 163, 210);
   background: radial-gradient(
     circle,
     rgba(56, 163, 210, 1) 0%,
@@ -232,6 +231,7 @@ main {
   transition: gap 200ms;
   padding: 48px 32px;
   margin-top: 22px;
+  cursor: default;
 }
 
 .card_beneficio:hover {
@@ -277,6 +277,7 @@ main {
 .contacto__titulo {
   font-weight: 400;
   font-size: 30px;
+  cursor: default;
 }
 
 .contacto__conteiner ul {
@@ -293,6 +294,10 @@ main {
   align-items: center;
   flex-direction: row;
   gap: 10px;
+}
+
+.contacto__conteiner li:nth-child(1) {
+  cursor: default;
 }
 
 .contacto__conteiner a {
@@ -317,4 +322,56 @@ main {
 #footersection h3 {
   font-weight: 300;
   font-size: 13px;
+}
+
+/* animación máquina de escribir */
+
+@keyframes blink {
+  to {
+    color: transparent;
+    opacity: 0;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+#beneficios h2 {
+  position: relative;
+  background: radial-gradient(
+    circle,
+    rgba(56, 163, 210, 1) 0%,
+    rgba(69, 103, 180, 1) 42%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+#beneficios h2::before,
+#beneficios h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#beneficios h2::before {
+  background-color: var(--blancods);
+  animation: typewriter 1.4s 1s steps(28) forwards;
+}
+
+#beneficios h2::after {
+  width: 0.1rem;
+  background: radial-gradient(
+    circle,
+    rgba(56, 163, 210, 1) 0%,
+    rgba(69, 103, 180, 1) 42%
+  );
+  animation: typewriter 1.4s 1s steps(28) forwards, blink 1s steps(28) infinite;
 }
