@@ -406,7 +406,7 @@ main {
     padding: 0 40px;
   }
 
-  #toggle-menu:checked + nav ul {
+  #toggle-menu:checked ~ .navlink li {
     display: flex;
   }
 }
