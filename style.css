@@ -556,9 +556,14 @@ main {
     color: var(--gris);
   }
 
+  #beneficios {
+    max-width: 100%;
+    padding: 5px;
+  }
+
   #beneficios h2 {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 20px;
     color: transparent;
     background: radial-gradient(
       circle,
@@ -567,10 +572,14 @@ main {
     );
     background-clip: text;
     -webkit-background-clip: text;
+    max-width: 100%;
+    margin: 30px 25px 0 0;
   }
 
   .card_beneficio {
+    width: 90%;
     height: fit-content;
+    margin: 0 auto;
   }
 
   .card_beneficio h3 {
