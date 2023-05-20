@@ -544,6 +544,12 @@ main {
 
 /* tamaño chico: celular */
 @media (max-width: 768px) {
+  #hero {
+    max-width: 80%;
+    padding: 24px 70px;
+    gap: 30px;
+  }
+
   .presentacion h1 {
     font-weight: 600;
     font-size: 30px;
