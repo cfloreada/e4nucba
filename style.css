@@ -217,7 +217,7 @@ main {
   justify-content: center;
   flex-direction: row;
   gap: 40px;
-  max-width: 80px;
+  max-width: 80%;
   flex: wrap;
 }
 
@@ -422,6 +422,8 @@ main {
   .cards {
     max-width: 90%;
     flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
   }
 
   #hero {
@@ -489,9 +491,6 @@ main {
     -webkit-background-clip: text;
   }
 
-  .cards {
-    gap: 15px;
-  }
   .card_beneficio {
     width: 400px;
     height: 520px;
