@@ -595,4 +595,8 @@ main {
     justify-content: center;
     gap: 8px;
   }
+
+  .imgbanner {
+    display: none;
+  }
 }
