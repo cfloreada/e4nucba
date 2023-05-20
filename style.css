@@ -217,7 +217,7 @@ main {
   justify-content: center;
   flex-direction: row;
   gap: 40px;
-  max-width: 800px;
+  max-width: 80px;
   flex: wrap;
 }
 
@@ -505,7 +505,6 @@ main {
 
   .card_beneficio h3 {
     font-size: 35px;
-    color: var(--negro);
   }
 
   .beneficio_info {
@@ -546,9 +545,20 @@ main {
 
 /* tamaño chico: celular */
 @media (max-width: 768px) {
+  .presentacion h1 {
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--negro);
+  }
+
+  .presentacion p {
+    font-size: 19px;
+    color: var(--gris);
+  }
+
   #beneficios h2 {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 30px;
     color: transparent;
     background: radial-gradient(
       circle,
@@ -559,8 +569,16 @@ main {
     -webkit-background-clip: text;
   }
 
+  .card_beneficio {
+    height: fit-content;
+  }
+
+  .card_beneficio h3 {
+    font-size: 25px;
+  }
+
   #beneficios p {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .contacto__conteiner ul {
