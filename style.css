@@ -567,7 +567,7 @@ main {
 
   #beneficios h2 {
     font-weight: 600;
-    font-size: 17px;
+    font-size: 30px;
     color: transparent;
     background: radial-gradient(
       circle,
@@ -579,6 +579,7 @@ main {
     max-width: 100%;
     margin-top: 30px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   #beneficios p {
@@ -629,5 +630,42 @@ main {
     color: var(--white);
     text-decoration: none;
     font-size: 17px;
+  }
+
+  #footersection h3 {
+    font-size: 10px;
+  }
+
+  #beneficios h2::before,
+  #beneficios h2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+  }
+
+  #beneficios h2::before {
+    background-color: var(--blancods);
+    animation: typewriter 1.4s 1s steps(28) forwards;
+  }
+
+  #beneficios h2::after {
+    width: 0.1rem;
+    background: radial-gradient(
+      circle,
+      rgba(56, 163, 210, 1) 0%,
+      rgba(69, 103, 180, 1) 42%
+    );
+    animation: typewriter 1.4s 1s steps(28) forwards,
+      blink 1s steps(28) infinite;
+  }
+
+  .contacto__titulo {
+    font-weight: 600;
+    font-size: 20px;
+    cursor: default;
   }
 }
