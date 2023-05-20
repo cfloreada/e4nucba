@@ -545,7 +545,6 @@ main {
 /* tamaño chico: celular */
 @media (max-width: 768px) {
   #hero {
-    max-width: 80%;
     padding: 24px 70px;
     gap: 30px;
   }
